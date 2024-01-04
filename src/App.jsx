@@ -7,7 +7,7 @@ function App() {
   const [charAllowed, setCharAllowed] = useState(false);
   const [password, setPassword] = useState("");
 
-  //useRef
+  //Used useRef
   const passwordRef = useRef(null);
 
   // Function to generate a password based on the specified criteria
