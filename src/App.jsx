@@ -1,4 +1,4 @@
-import { useState, useCallback, useEffect, useRef} from "react";
+import { useState, useCallback, useEffect, useRef } from "react";
 import "./App.css";
 
 function App() {
@@ -7,7 +7,7 @@ function App() {
   const [charAllowed, setCharAllowed] = useState(false);
   const [password, setPassword] = useState("");
 
-  //Used useRef
+  //useRef
   const passwordRef = useRef(null);
 
   // Function to generate a password based on the specified criteria
@@ -49,9 +49,8 @@ function App() {
 
   return (
     <>
-      
       <div className="w-full max-w-2xl mx-auto shadow-md rounded-lg px-8 py-6 my-8 text-blue-800 bg-gradient-to-r from-blue-200 via-blue-300 to-blue-500">
-        <h1 className="text-white text-center my-3 font-bold text-3xl">
+        <h1 className="text-blue-700 hover:text-blue-800 text-center my-3 font-bold text-3xl">
           Password Generator
         </h1>
 
@@ -73,7 +72,6 @@ function App() {
         </div>
 
         <div className="flex text-base gap-x-4">
-
           <div className="flex items-center gap-x-2">
             <input
               type="range"
@@ -85,7 +83,9 @@ function App() {
                 setLength(e.target.value);
               }}
             />
-            <label className="text-white">Length: {length}</label>
+            <label className="text-blue-700 hover:text-blue-800">
+              Length: {length}
+            </label>
           </div>
 
           <div className="flex items-center gap-x-2">
@@ -97,7 +97,10 @@ function App() {
                 setNumberAllowed((prev) => !prev);
               }}
             />
-            <label htmlFor="numberInput" className="text-white">
+            <label
+              htmlFor="numberInput"
+              className="text-blue-700 hover:text-blue-800"
+            >
               Numbers
             </label>
           </div>
@@ -111,7 +114,10 @@ function App() {
                 setCharAllowed((prev) => !prev);
               }}
             />
-            <label htmlFor="characterInput" className="text-white">
+            <label
+              htmlFor="characterInput"
+              className="text-blue-700 hover:text-blue-800"
+            >
               Characters
             </label>
           </div>
