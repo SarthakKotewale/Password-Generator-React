@@ -99,7 +99,7 @@ function App() {
             />
             <label
               htmlFor="numberInput"
-              className="text-blue-700 hover:text-blue-800"
+              className="text-blue-700 hover:text-blue-800 cursor-pointer"
             >
               Numbers
             </label>
@@ -116,7 +116,7 @@ function App() {
             />
             <label
               htmlFor="characterInput"
-              className="text-blue-700 hover:text-blue-800"
+              className="text-blue-700 hover:text-blue-800 cursor-pointer"
             >
               Characters
             </label>
